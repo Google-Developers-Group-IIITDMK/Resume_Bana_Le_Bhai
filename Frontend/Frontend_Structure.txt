@@ -1,1 +1,42 @@
+Frontend Structure and Setup Instructions
+========================================
 
+This frontend is built with:
+- React 19.1.1 + Vite 7.1.7
+- Tailwind CSS for styling
+- Axios for API calls
+
+Directory Structure:
+Frontend/
+├── src/
+│   ├── components/
+│   │   ├── Header.jsx          # App header component
+│   │   ├── ResumeForm.jsx      # Main form component
+│   │   └── LoadingSpinner.jsx  # Loading spinner component
+│   ├── App.jsx                 # Main app component
+│   ├── App.css                 # App styles
+│   ├── index.css              # Global styles with Tailwind
+│   └── main.jsx               # App entry point
+├── public/                    # Static assets
+├── .env                      # Environment variables
+├── .gitignore               # Git ignore file
+├── package.json             # Dependencies and scripts
+├── tailwind.config.js       # Tailwind configuration
+├── postcss.config.js        # PostCSS configuration
+└── vite.config.js           # Vite configuration
+
+Setup Instructions:
+1. Navigate to Frontend directory: cd Frontend
+2. Install dependencies: npm install
+3. Start development server: npm run dev
+4. Open http://localhost:5173 in browser
+
+Make sure the backend is running on http://localhost:8000 for the form to work properly.
+
+Form Features:
+- Responsive design with Tailwind CSS
+- Form validation
+- Error handling and loading states
+- PDF download functionality
+- Auto-reset after successful submission
+- Professional styling with gradient background
