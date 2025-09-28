@@ -1,0 +1,279 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Paarth Batra} \\ \vspace{1pt}
+     \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +91 8179310290 ~ \href{mailto:paarth.batra007@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{paarth.batra007@gmail.com}} ~ 
+    \href{https://www.linkedin.com/in/paarth7}{\raisebox{-0.2\height}\faLinkedin\ \underline{LinkedIn}}  ~
+    \href{https://github.com/hydro-7}{\raisebox{-0.2\height}\faGithub\ \underline{Github}}
+    \vspace{-7pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indian Institute Of Information Technology, Design and Manufacturing}{Kurnool}
+      {Bachelor of Technology in Computer Science - \textbf{Grade : 9.11}}{2023 - 2027}
+      \vspace{-3pt}
+     \resumeSubheading
+  {FIITJEE Junior College}{Hyderabad}
+  {High School - (Physics, Chemistry, Mathematics) - \textbf{Grade : 96\%}}{2021 - 2023}
+  \resumeSubHeadingListEnd
+    \vspace{-12pt}
+% ------RELEVANT COURSEWORK-------
+\section{Relevant Coursework}
+    %\resumeSubHeadingListStart
+        \begin{multicols}{4}
+            \begin{itemize}[itemsep=-5pt, parsep=3pt]
+                \item\small Data Structures
+                \item Computer Networks
+                \item Algorithms Analysis
+                \item Database Management
+                \item Machine Learning
+                \item Python Programming
+                \item Operating Systems
+                \item Computer Architecture
+            \end{itemize}
+        \end{multicols}
+        \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Zentree Labs}{May 2025 - Jul 2025}
+      {Machine Learning Intern}{Hyderabad}
+      \resumeItemListStart
+        \resumeItem{Benchmarked 5+ Vision Transformer architectures (ViT Base, Swin Transformer etc), analyzing trade offs in accuracy (up to 6\%), training time (changes of by 30\%), and spatial feature retention for 2D to 3D mapping.}        
+        \resumeItem{Engineered evaluation framework using statistical similarity metrics such as Earth Mover’s Distance and KL Divergence, achieving up to 0.82 alignment score between generated 3D models and ground truth references.}
+        \resumeItem{ Collaborated with team members and developed a 3D object generation pipeline using the Python Blender API, transforming image and textual prompts into voxel models with an average rendering time of 2 seconds.}
+        % \resumeItem{Utilized Android Studio as a development environment in order to visualize the application in both iOS and Android.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Zentree Labs}{Nov 2024 - Dec 2024}
+      {Machine Learning Intern }{Hyderabad}
+      \resumeItemListStart
+        \resumeItem{Migerated an Object Detection and Tracking pipeline from YOLOv5 to YOLOv8, boosting mAP scores by 19.5\% (37.4 to 44.9) leading to higher precision for real time surveillance scenarios.}
+        \resumeItem{Enhanced accuracy by 2\% on crowded scenes by replacing Standard Non Maximum Supression architecture with class wise Non Maximum Suppression in YOLOv8, improving object separation in dense environments.}
+        \resumeItem{Reduced YOLOv8 model size by 7\% using Channel and Filter Pruning strategies, enabling efficient deployment on edge devices while maintaining high detection accuracy.}
+        \resumeItem{Received a performance based return offer for Summer 2025, based on measurable impact in optimizing ML models.}
+
+      \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-14pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Orthophoto Segmentation} \emph{ML4Earth 2nd Place}}{\textbf{\href{https://github.com/hydro-7/ML4Earth-Foundation-Models-for-Earth-Observation-2024}{[\underline{Github}]}}}
+          \resumeItemListStart
+            \resumeItem{Implemented a custom Attention UNet architecture onto the Landcover.ai Dataset with over 40 satellite orthophotos.}
+            \resumeItem{Applied a Pyramid Pooling Layer on the bottleneck step for multi scale feature aggregation, effectively boosting the MIoU from 0.65 to 0.76.}
+            \resumeItem{Added a RESNET 50 encoder block instead of the classic UNet encoder to further increase the IoU of the maps.}
+            \resumeItem{Achieved a MIoU of 0.76, Jaccard IoU of 0.72, Precision Score of 0.89 and F1 score of 0.88.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{Generative Object Removal} \emph{}}{\textbf{\href{https://github.com/hydro-7/Generative-Object-Removal-using-DeepFillv2}{[\underline{Github}]}}}
+          \resumeItemListStart
+            \resumeItem{Engineered an end to end pipeline that integrates Mask-RCNN and DeepFillv2 for upto 90\% generative inpainting.}
+            \resumeItem{Leveraged pretrained weights fine tuned on Places2 dataset to achieve high quality results in under 2 seconds per image.}
+            \resumeItem{Optimized mask generation workflow using interactive bounding box selection, improving annotation speed by 40\%.}
+          \resumeItemListEnd 
+
+
+%     \resumeProjectHeading
+%           {\textbf{Generative Object Removal} \emph{}}{\textbf{\href{https://github.com/hydro-7/Generative-Object-Removal-using-DeepFillv2}{[\underline{Github}]}}}
+%           \resumeItemListStart
+%             \resumeItem{Built an interactive Question Answering web application leveraging Gemma (2B) LLM via the Ollama framework integrated with Streamlit.}
+%             \resumeItem{Formulated prompt handling with ChatPromptTemplate and StrOutputParser for a system where users input questions and receive AI-generated responses.}
+%             \resumeItem{Configured secure API key handling using Python-dotenv and integrated LangSmith for tracking and managing
+% LangChain interactions effectively}
+%           \resumeItemListEnd 
+
+          
+          % \vspace{-13pt}
+          % \resumeProjectHeading
+          % {\textbf{Lazy Door Opener}  \emph{}}{\href{https://github.com/hydro-7/Design-Realization-2024}{[\underline{Github}]}}
+          % \resumeItemListStart
+          %   \resumeItem{Made a glove using flex sensors, through which a set of servo motors were controlled, making a door hinge turn.}
+          %   \resumeItem{Data from the sensors was stored in Google Sheets using the \textbf{Sheets API}, and was cleaned with \textbf{Logistic Regression}}
+          %   \resumeItem{Seamless communication between ESP32 and ESP8266 was employed to make a \textbf{transmitter and receiver system}.}
+          % \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+\vspace{-11pt}
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, C, C++, JavaScript, TypeScript, SQL, HTML, CSS} \\
+     \textbf{Machine Learning Stack}{: Pytorch, Tensorflow, Keras, Torchvision, OpenCV} \\
+     \vspace{1pt}
+     \textbf{Web Development Stack}{: Flask, MongoDB, MySQL, Tailwind CSS, Reactjs } \\
+     \vspace{1pt}
+     \textbf{MLOps \& Deployment}{: FastAPI, REST API, Docker, MLflow, Airflow, CICD, Git, Github, Azure} \\
+    }}
+ \end{itemize}
+ \vspace{-14pt}
+
+
+%-----------INVOLVEMENT---------------
+\section{Achievements}
+\small
+    \begin{itemize}
+        % \item {Solved 900 + DSA questions across all platforms.}
+        \item {Ranked 4th out of 7000+ registrants in \textbf{\href{https://www.hackerearth.com/challenges/new/competitive/zelestra-x-aws-ml-ascend-challenge-second-edition/}{[\underline{AWS x Zelestra ML Ascend Hackathon}].}}}
+        
+        \item {2nd Place in the \href{https://devpost.com/software/ml4earth-2024-bmgjih}{\textbf{[\underline{ML4Earth Hackathon}]}} , which is an annual, global ML contest hosted by TUM Germany.}
+        
+        \item {Earned Specialist title on \textbf{\href{https://codeforces.com/profile/hydro_7}{[\underline{Codeforces}]}}, 3 Star rating on \textbf{\href{https://www.codechef.com/users/hydro_7}{[\underline{Codechef}]}} and solved over 700 problems on \href{https://leetcode.com/u/hydro_7/}{\textbf{[\underline{Leetcode}]}}.}
+    \end{itemize}
+
+\vspace{-14pt}
+\section{Positions of Responsibility}
+    \resumeSubHeadingListStart
+        \resumeSubheading{Google Developer Groups}{}{Machine Learning Coordinator}{}
+            \resumeItemListStart
+                \resumeItem{Coordinated machine learning events for 100+ freshmen and sophomores. }
+                
+            \resumeItemListEnd
+        
+    \resumeSubHeadingListEnd
+
+
+\end{document}
+\
