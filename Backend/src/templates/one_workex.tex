@@ -1,0 +1,245 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Paarth Batra} \\ \vspace{1pt}
+    \normalsize +91 8179310290 $|$ \href{mailto:paarth.batra007@gmail.com}{\underline{paarth.batra007@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/paarth7}{\underline{linkedin.com/in/paarth7}} 
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indian Institute Of Information Technology, Design and Manufacturing}{Kurnool}
+      {Bachelor of Technology in Computer Science \textbf{(CGPA : 9.15)}}{Aug. 2023 -- May 2027}
+    \resumeSubheading
+      {FIITJEE Jr. College}{Hyderabad}
+      {High School - TSBIE \textbf{(Grade : 96\%)}}{Aug. 2021 -- May 2023}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \normalsize
+    \resumeSubheading
+      {Machine Learning Intern}{Nov 2024 -- Dec 2024}
+      {Zentree Labs}{Hyderabad}
+      \resumeItemListStart
+        \resumeItem{Altered the Non Max Supression (NMS) of the \textbf{YOLOv8} model to \textbf{Classwise NMS} leading to an increase in the accuracy of object detection in large clusters of objects.}
+        \resumeItem{Used a custom \textbf{Channel and Filter Pruning} based method to reduce the number of parameters in the YOLOv8 model by \textbf{20\%}}
+        % \resumeItem{t1}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+% -----------For Future Roles-----------
+    % \resumeSubheading
+    %   {Information Technology Support Specialist}{Sep. 2018 -- Present}
+    %   {Southwestern University}{Georgetown, TX}
+    %   \resumeItemListStart
+    %     \resumeItem{Communicate with managers to set up campus computers used on campus}
+    %     \resumeItem{Assess and troubleshoot computer problems brought by students, faculty and staff}
+    %     \resumeItem{Maintain upkeep of computers, classroom equipment, and 200 printers across campus}
+    % \resumeItemListEnd
+
+    % \resumeSubheading
+    %   {Artificial Intelligence Research Assistant}{May 2019 -- July 2019}
+    %   {Southwestern University}{Georgetown, TX}
+    %   \resumeItemListStart
+    %     \resumeItem{Explored methods to generate video game dungeons based off of \emph{The Legend of Zelda}}
+    %     \resumeItem{Developed a game in Java to test the generated dungeons}
+    %     \resumeItem{Contributed 50K+ lines of code to an established codebase via Git}
+    %     \resumeItem{Conducted  a human subject study to determine which video game dungeon generation technique is enjoyable}
+    %     \resumeItem{Wrote an 8-page paper and gave multiple presentations on-campus}
+    %     \resumeItem{Presented virtually to the World Conference on Computational Intelligence}
+    %   \resumeItemListEnd
+%-------------------------------------------
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+    \normalsize{
+      \resumeProjectHeading
+          {\textbf{Orthophoto Segmentation} : ML4Earth 2024 Second Place}{\textbf{\href{https://github.com/hydro-7/ML4Earth-Foundation-Models-for-Earth-Observation-2024}{[\underline{Github}]}}}
+          \resumeItemListStart
+            \resumeItem{Implemented a custom \textbf{Attention UNet architecture} onto the Landcover.ai Dataset}
+            \resumeItem{Applied a \textbf{Pyramid Pooling Layer} on the bottleneck step for \textbf{multi-scale feature aggregation}, effectively boosting the MIoU from \textbf{0.65} to \textbf{0.76}.}
+            \resumeItem{Added a \textbf{RESNET 50 encoder} block instead of the classic UNet encoder to further increase the IoU of the segment maps.}
+            \resumeItem{Achieved a MIoU of \textbf{0.76}, Jaccard IoU of \textbf{0.72}, Precision Score of \textbf{0.89} and F1 score of \textbf{0.88}.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+            {\textbf{IOT Semester Project :} }{}
+          \resumeItemListStart
+            \resumeItem{Made a glove using flex sensors, through which a set of servo motors were controlled, making a door hinge turn.}
+            \resumeItem{The data from the flex sensors was stored into a Google Sheets using the \textbf{Sheets API}, and this data was cleaned using \textbf{Logistic Regression} .}
+            \resumeItem{Seamless communication between ESP32 and ESP8266 was employed to make a \textbf{transmitter and receiver system}.}
+          \resumeItemListEnd
+    }
+    
+      \resumeProjectHeading
+          {\textbf{Artistic Image Style Transfer :} }{\textbf{\href{https://github.com/hydro-7/Style-Transfer-CNN}{[\underline{Github}]}}}
+          \resumeItemListStart
+            \resumeItem{Wrote PyTorch code from scratch implementing the \textbf{Gatys Neural Style Transfer} research paper.}
+            \resumeItem{Utilized the \textbf{VGG-19} pretrained model to extract the feature maps.}
+            \resumeItem{Implemented the \textbf{Gram Matrix} to get the activation weights for each feature map.}
+            \resumeItem{Applied MSE - Loss on the Style and Content matrices to get the required style transferred image.}
+          \resumeItemListEnd
+    }
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C,  C++,  Java,  LaTeX, Python (PyTorch, TensorFlow, Keras, SciKitLearn), Flask} \\
+     \textbf{Machine Learning}{: Regression, Clustering, Classification, Reinforcement Learning} \\
+     \textbf{Deep Learning}{: ANN, CNN, RNN, NLP, UNet, Attention UNet, Transformers } \\
+     \textbf{Computer Vision}{: Semantic Segmentation, Object Detection, Image Classification, Style Transfer }
+    }}
+ \end{itemize}
+ 
+%-----------ACHIEVEMENTS & CODING PROFILES-----------
+\section{Achievements \& Coding Profiles}
+    \small
+    \begin{itemize}
+        \item {Solved 900 + DSA questions across all platforms.}
+        \item {Specialist on \textbf{\href{https://codeforces.com/profile/hydro_7}{[\underline{Codeforces}]}}    $|$    3 star on \textbf{\href{https://www.codechef.com/users/hydro_7}{[\underline{Codechef}]}}    $|$   600+ solved on \href{https://leetcode.com/u/hydro_7/}{\textbf{[\underline{Leetcode}]}}.}
+        \item {2nd Place in the \href{https://devpost.com/software/ml4earth-2024-bmgjih}{\textbf{[\underline{ML4Earth Hackathon}]} 2024.}
+        \item {Best rank of 268 out of 41000 participants in Codechef Starters 153 (Div. 2).}
+        \item {[\textbf{\href{https://github.com/hydro-7}{\underline{GitHub}}}] with all my other personal projects}
+    \end{itemize}
+
+%-----------RELEVANT COURSEWORK-----------
+\section{\textbf{Relevant Coursework}}
+   { Data Structures and Algorithms $|$ Design and Analysis of Algorithms $|$ C Programming $|$  Python Programming}
+
+
+%-------------------------------------------
+\end{document}
